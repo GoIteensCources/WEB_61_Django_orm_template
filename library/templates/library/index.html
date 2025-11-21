@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Головна — Libruary{% endblock %}
+
+{% block content %}
+
+<div class="container py-4">
+
+    <h2 class="text-center mb-4">Library Catalog</h2>
+
+    <div class="row g-3">
+
+        {% for book in books %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+
+                    <h5 class="card-title mb-1">{{ book.title }}</h5>
+                    <p class="text-muted mb-2">by {{ book.author }}</p>
+
+                    <p class="mb-1">
+                        <strong>Year:</strong> {{ book.publication_year }}
+                    </p>
+
+                    <p class="mb-1">
+                        <strong>Genres:</strong> {{ book.genres_list }}
+                    </p>
+
+                    <p class="mb-0">
+                        <strong>Price:</strong> {{ book.price }} UAH
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
