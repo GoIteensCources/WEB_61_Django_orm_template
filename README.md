@@ -1,23 +1,22 @@
  # Django ORM Template (Library)
 
 
- Це простий шаблон-додаток Django для  роботи з ORM складних запитів (моделі `Author`, `Publisher`, `Book`, `Genre`).
+ Це простий шаблон-додаток Django для  роботи з ORM складних запитів 
+ Моделі 
+ - `Author`
+ - `Publisher`
+ - `Book`
+ - `Genre`
 
  **Quick start**
 
  - **Клонування з GitHub**:
 
  ```bash
- git clone <REPO_URL>
+ git clone < git@github.com:GoIteensCources/WEB_61_Django_orm_template.git >
  cd ORM_template
  ```
 
-
- **Передумови**
- ---------------
-
- - Python 3.8+
- - Git
 
  **Встановлення та запуск**
  ---------------
